@@ -64,7 +64,9 @@ driver   : xserver-xorg-video-nouveau - distro free builtin
 13. reboot, click "del" into bios then disable secure boot control from bios if the nvidia-smi failed.
 
 14.install cuda9.0
+
 https://developer.nvidia.com/cuda-90-download-archive?target_os=Linux&target_arch=x86_64&target_distro=Ubuntu&target_version=1704&target_type=deblocal
+
 download cuda-repo-ubuntu1704-9-0-local_9.0.176-1_amd64.deb
 ```
 sudo dpkg -i cuda-repo-ubuntu1704-9-0-local_9.0.176-1_amd64.deb
@@ -74,6 +76,7 @@ sudo apt-get install cuda-9.0
 sudo apt-get install cuda-libraries-9-0 # will install libcublas.so
 ```
 15. add path of cuda-9.0 in the ~/.bashrc
+```
 #cuda
 cuda_10path="/usr/local/cuda-9.0"
 cuda_path="/usr/local/cuda"
@@ -81,9 +84,13 @@ export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${cuda_10path}/lib64
 export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${cuda_path}/lib64
 export PATH="${cuda_10path}/bin:${PATH}"
 export PATH="${cuda_path}/bin:${PATH}"
-16 source ~/.bashrc;then run nvcc command
+```
+```
+source ~/.bashrc #then run nvcc command
+```
 17. install anaconda 
 https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/
+
 download Anaconda3-4.3.0-Linux-x86_64.sh
 ```
 bash Anaconda3-4.3.0-Linux-x86_64.sh
@@ -92,7 +99,9 @@ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/m
 conda config --set show_channel_urls yes
 ```
 install pytorch, choose 0.4 version
+
 https://pytorch.org/get-started/previous-versions/
+
 18. install tensorflow
 ```
 pip3  install tensorflow-gpu
