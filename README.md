@@ -1,5 +1,5 @@
 # Setup-Ubuntu18-MSI-GL63
-Setup ubuntu18 on MSI-GL63
+
 Why do i write to guide people to install linux on the MSI laptop whatever the series is?
 it would be not easy to handle on those problems you meet while installing linux on the MSI laptop. in another word, it would be more difficult to install Linux on MSI than other computers without graphics card.
 ```
