@@ -75,6 +75,16 @@ sudo apt-get update
 sudo apt-get install cuda-9.0
 sudo apt-get install cuda-libraries-9-0 # will install libcublas.so
 ```
+
+install cudnn
+
+https://developer.nvidia.com/rdp/cudnn-download # for tensorflow-gpu
+
+download  libcudnn7_7.3.1.20-1+cuda9.0_amd64.deb
+```
+sudo dpkg -i libcudnn7_7.0.3.11-1+cuda9.0_amd64.deb
+```
+
 15. add path of cuda-9.0 in the ~/.bashrc
 ```
 #cuda
