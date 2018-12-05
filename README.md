@@ -1,5 +1,15 @@
 # Setup-Ubuntu18-MSI-GL63
 Setup ubuntu18 on MSI-GL63
+
+```
+Summary for deeplearning setup
+install nvidia-410 driver
+install cuda-9.0
+install cuDNN-7.0
+install tensorflow-gpu
+install pytorch-gpu
+```
+
 1. Using the UltraISO to burn the ubuntu18.0 system into USB disk on the window platform
 
 2. Access to the bios GUI, select the UEFI boot and USB boot
