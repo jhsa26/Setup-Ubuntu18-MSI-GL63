@@ -21,7 +21,7 @@ install pytorch-gpu
    
    Add " nomodeset" after "quiet splash". then click F10 to save this configuration and reboot
    
-   Because the ubuntu use nouveau drivers  in default.
+   Because the ubuntu use nouveau drivers  by default.
   
    You must do the step4.Otherwise, when you login, the screen will be freezed.
 5. You can delete all hard disk and divide the hard disk into several part. home, swap area, /, and efi (storage - 300M,this must be done in here, otherwise there is no space to install grub2. )
