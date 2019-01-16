@@ -131,5 +131,7 @@ pip3  install tensorflow-gpu
 
 
 Author: HuJing
+
 @USC
+
 Date:2018-12-12
